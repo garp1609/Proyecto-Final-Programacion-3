@@ -49,9 +49,33 @@ body {
 
 /* Estilos del footer */
 .footer {
-    text-align: center;
+    display: flex;             /* Usamos Flexbox para alinear los elementos */
+    justify-content: center;   /* Centra el contenido horizontalmente */
+    align-items: center;       /* Centra el contenido verticalmente */
+    text-align: left;          /* Alinea el texto a la izquierda */
     padding: 20px;
     background: #1e3c72;
     color: white;
     border-top: 2px solid white;
+}
+
+.footer img {
+    width: 80px;               /* Ajusta el tamaño de la imagen */
+    height: auto;              /* Mantiene la proporción de la imagen */
+    margin-right: 15px;        /* Espacio entre la imagen y el texto */
+}
+
+.footer p {
+    font-size: 1.2rem;         /* Ajusta el tamaño del texto */
+    margin: 0;                 /* Elimina márgenes del texto */
+    font-weight: bold;
+}
+
+/* Estilos adicionales para la imagen del footer (si necesario) */
+.footer img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer img:hover {
+    transform: scale(1.1);     /* Efecto de escala en la imagen al pasar el mouse */
 }
